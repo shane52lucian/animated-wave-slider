@@ -1,9 +1,21 @@
 @import 'bs_var_override';
 
 .carousel-control-prev-icon{
-    background-image: $carousel-control-prev-icon-bg;
+    background-image: escape-svg($carousel-control-prev-icon-bg);
 }
 
 .carousel-control-next-icon{
-    background-image: $carousel-control-next-icon-bg;
+    background-image: escape-svg($carousel-control-next-icon-bg);
 }
+
+.carousel-control-next, .carousel-control-prev {
+    left: 10%;
+    right: auto;
+    top: auto;
+    width: auto;
+}
+
+.carousel-control-next {
+    left: 20%;
+}
+

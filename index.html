@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Animated Wave with Slider</title>
+  <title>Animated Wave with Slider</title>
 
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
-<body>
 
-      <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-                <div class="heroContent col-6">
-                    <h1>first slider</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://via.placeholder.com/200x367.png?text=first+slide" class="" alt="...">
-                </div>
+<body>
+  <div id="heroSlider" class="carousel slide heroSlider" data-bs-ride="carousel">
+    <div class="container">
+      <div class="carousel-inner">
+        <div class="red carousel-item active">
+          <div class="row">
+            <div class="heroContent col-6">
+              <h1>first slider</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-          </div>
-          <div class="carousel-item row">
-            <div class="row">
-                <div class="heroContent col-6">
-                    <h1>second slider</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://via.placeholder.com/200x367.png?text=second+slide" class="" alt="...">
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item row">
-            <div class="row">
-                <div class="heroContent col-6">
-                    <h1>third slider</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://via.placeholder.com/200x367.png?text=third+slide" class="" alt="...">
-                </div>
+            <div class="col-6">
+              <img src="https://via.placeholder.com/450x367.png?text=first+slide" class="" alt="...">
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L40,144C80,128,160,96,240,106.7C320,117,400,171,480,170.7C560,171,640,117,720,117.3C800,117,880,171,960,176C1040,181,1120,139,1200,128C1280,117,1360,139,1400,149.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="green carousel-item">
+          <div class="row">
+            <div class="heroContent col-6">
+              <h1>second slider</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="col-6">
+              <img src="https://via.placeholder.com/450x367.png?text=second+slide" class="" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="#aa334a carousel-item">
+          <div class="row">
+            <div class="heroContent col-6">
+              <h1>third slider</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="col-6">
+              <img src="https://via.placeholder.com/450x367.png?text=third+slide" class="" alt="...">
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="ocean">
+      <div class="waves"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,1 +1,49 @@
 @import 'bootstrap_override';
+
+
+.heroSlider {
+
+    height: 80vh;
+    overflow: hidden;
+
+    .waves {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;   
+        transition: 500ms;
+        background-color: red;
+      }
+      
+      .waves::after {
+        content: '';
+        position: absolute;
+        width: 300vw;
+        height: 300vw;
+        top: -65vw;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        border-radius: 44%;
+        background: inherit;
+        animation: waves 15s linear infinite;
+        z-index: -1;
+      }
+      
+      @keyframes waves {
+        0% {
+          transform: translate(-50%, -75%) rotate(0deg);
+        }
+        
+        100% {
+          transform: translate(-50%, -75%) rotate(360deg);
+        }
+      }
+
+      .heroContent {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+      }
+      
+}
